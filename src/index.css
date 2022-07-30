@@ -21,6 +21,7 @@ a {
 
 .active {
   color: #0188F3 !important;
+  font-weight: 500;
 }
 
 .navbar {
