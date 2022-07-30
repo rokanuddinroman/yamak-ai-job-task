@@ -1,13 +1,147 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #F6FAFD;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: #0188F3 !important;
+}
+
+.navbar {
+  box-shadow: 0px 6px 15px #00000029;
+  background-color: white;
+  height: 70px;
+}
+
+ul {
+  margin-bottom: 0 !important;
+}
+
+ul li {
+  display: inline;
+}
+
+li a {
+  font-size: 18px;
+}
+
+.body-wrapper {
+  margin-inline: 50px;
+}
+
+.primary-button {
+  padding: 7px 26px;
+  background-color: #0188F3;
+  border: 0;
+  color: white;
+}
+
+.richtext-container {
+  border-right: 2px solid #707070;
+}
+
+.verticle-line {
+  margin-inline: 6px;
+  /* border-right: 23px solid #707070; */
+  content: " ";
+  height: 100%;
+  width: 1px;
+  background-color: #707070;
+}
+
+.text-container {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: 0px 6px 10px #0000001A;
+}
+
+.text-container p {
+  margin-bottom: 0 !important;
+  font-size: 13px;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid #707070;
+}
+
+.richtext-area {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0px 6px 10px #0000001A;
+}
+
+.richtext-area textarea {
+  width: 100%;
+  border: 0;
+}
+
+.richtext-area textarea:focus {
+  outline: 0;
+}
+
+.richtext-area div {
+  padding: 4px 4px 8px 4px;
+  border-bottom: 2px solid black;
+  margin-bottom: 4px;
+}
+
+.shadow-button {
+  box-shadow: 0px 6px 10px #0000001A;
+  padding: 2px 5px;
+  font-weight: 600;
+}
+
+.select-button {
+  border: 1px solid #7FC3F9;
+  padding: 6px;
+  margin-left: 0.8rem;
+}
+
+.mobile-navbar {
+  display: block;
+}
+
+@media screen and (max-width:900px) {
+  .body-wrapper {
+    margin-inline: 20px;
+  }
+
+  .mobile-navbar {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+  }
+
+  .mobile-navbar li {
+    padding: 8px !important;
+  }
+
+
+  .mobile-navbar a {
+    font-size: 14px;
+  }
+
+  .richtext-container {
+    border-right: 0;
+  }
 }
